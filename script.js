@@ -7,9 +7,9 @@ const modal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close")
 
 function handleClick(event) {
-  spoiler.addEventListener("click", () => {
+  /*spoiler.addEventListener("click", () => {
     spoiler_content.style.display = "none"
-  })
+  })*/
   displaySpoiler(img_info)
 }
 function handleClick_0(event) {
