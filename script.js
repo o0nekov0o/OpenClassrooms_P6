@@ -16,13 +16,13 @@ const closeBtn = document.querySelector(".close")
 
 for(let i = 0; i < 28; i++){
     let handle = "handleClick_" + i
-    let id = "img_" + i + "_info"
+    let img = "img_" + i + "_info"
     window[handle] = function handle(event) {
         modal.style.display = "block";
         closeBtn.addEventListener("click", () => {
         modal.style.display = "none"
         })
-        displayPopup(window[id])
+        displayPopup(window[img])
     }
 }
 img.addEventListener('click', handleClick_0)
