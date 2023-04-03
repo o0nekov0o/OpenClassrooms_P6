@@ -5,6 +5,7 @@ for(let i = 0; i < 28; i++){
 }
 const modal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close")
+img.addEventListener('click', handleClick_0)
 
 function handleClick(event) {
   /*spoiler.addEventListener("click", () => {
