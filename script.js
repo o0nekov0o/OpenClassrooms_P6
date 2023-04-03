@@ -1,214 +1,31 @@
-const img = document.getElementById('img');
 for(let i = 0; i < 28; i++){
     let id = "img_" + i
     window[id] = document.getElementById(id)
 }
-const modal = document.querySelector(".modal")
-const closeBtn = document.querySelector(".close")
-img.addEventListener('click', handleClick_0)
+const img = document.getElementById('img');
+
 
 function handleClick(event) {
-  /*spoiler.addEventListener("click", () => {
+  spoiler.addEventListener("click", () => {
     spoiler_content.style.display = "none"
-  })*/
+  })
   displaySpoiler(img_info)
 }
-function handleClick_0(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_0_info)
+const modal = document.querySelector(".modal")
+const closeBtn = document.querySelector(".close")
+
+for(let i = 0; i < 28; i++){
+    let handle = "handleClick_" + i
+    let id = "img_" + i + "_info"
+    window[handle] = function handle(event) {
+        modal.style.display = "block";
+        closeBtn.addEventListener("click", () => {
+        modal.style.display = "none"
+        })
+        displayPopup(window[id])
+    }
 }
-function handleClick_1(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_1_info)
-}
-function handleClick_2(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_2_info)
-}
-function handleClick_3(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_3_info)
-}
-function handleClick_4(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_4_info)
-}
-function handleClick_5(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_5_info)
-}
-function handleClick_6(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_6_info)
-}
-function handleClick_7(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_7_info)
-}
-function handleClick_8(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_8_info)
-}
-function handleClick_9(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_9_info)
-}
-function handleClick_10(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_10_info)
-}
-function handleClick_11(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_11_info)
-}
-function handleClick_12(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_12_info)
-}
-function handleClick_13(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_13_info)
-}
-function handleClick_14(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_14_info)
-}
-function handleClick_15(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_15_info)
-}
-function handleClick_16(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_16_info)
-}
-function handleClick_17(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_17_info)
-}
-function handleClick_18(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_18_info)
-}
-function handleClick_19(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_19_info)
-}
-function handleClick_20(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_20_info)
-}
-function handleClick_21(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_21_info)
-}
-function handleClick_22(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_22_info)
-}
-function handleClick_23(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_23_info)
-}
-function handleClick_24(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_24_info)
-}
-function handleClick_25(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_25_info)
-}
-function handleClick_26(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_26_info)
-}
-function handleClick_27(event) {
-  modal.style.display = "block";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none"
-  })
-  displayPopup(img_27_info)
-}
+img.addEventListener('click', handleClick_0)
 
 function displaySpoiler(movie_data) {
   document.getElementById('spoiler_content').innerHTML = "<b style=\"background: black; color: white\">Résumé</b> : "
